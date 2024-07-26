@@ -68,14 +68,6 @@ class Sem {
 	        thread.start();
 	    }
 
-	    // Aguarde um pouco para garantir que todas as threads concluam
-	    try {
-	        Thread.sleep(1000); // Pode ser ajustado conforme necessário
-	    } catch (InterruptedException e) {
-	        Thread.currentThread().interrupt();
-	        System.out.println(e.getMessage());
-	    }
-
 	    // Imprimir a soma total após todas as threads concluírem
 	    System.out.println("Total Sum: " + Sem.getTotalSum());
     }
